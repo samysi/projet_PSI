@@ -24,12 +24,12 @@ class IndividuController extends Controller
 			Appartenance::where('id_individu', $id)->delete();
 			Individu::where('id_individu', $id)->delete();
 
-	
+			
 		}
-			return redirect('/individu');
+		return redirect('/individu');
 	}
 
-		public function modifier(Request $request){
+	public function modifier(Request $request){
 
 		$id=$request->input('NumID');
 		if(isset($id))
@@ -40,9 +40,10 @@ class IndividuController extends Controller
 				'NOM'=>$request->nom,
 				'PRENOM'=>$request->prenom,
 				'EMAIL'=>$request->email,
+				'NUMERO'=>$request->numero,
 			]);
 
-	
+			
 		}
 
 		return redirect('/individu');
@@ -55,7 +56,7 @@ class IndividuController extends Controller
 			$individu=Individu::where('id_individu', $id)->first();
 			return view('modificationIndividu', compact('individu'));
 
-	
+			
 		}
 	}
 }

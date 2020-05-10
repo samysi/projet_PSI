@@ -105,10 +105,10 @@ class AppartenanceController extends Controller
 		$appartenances = Appartenance::all();
 		foreach($appartenances as $appartenance) {
 			$data[]= array($appartenance->individu->NOM, $appartenance->individu->PRENOM, $appartenance->annee);
-            }
-    $columns = array('nom', 'prenom', 'annee');        
-    return self::getCsv($columns, $data);
-}
+		}
+		$columns = array('nom', 'prenom', 'annee');        
+		return self::getCsv($columns, $data);
+	}
 
 
 }

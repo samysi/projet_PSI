@@ -24,12 +24,12 @@ class GroupeController extends Controller
 			Appartenance::where('id_groupe', $id)->delete();
 			Groupe::where('id_groupe', $id)->delete();
 
-	
+			
 		}
-			return redirect('/groupe');
+		return redirect('/groupe');
 	}
 
-		public function modifier(Request $request){
+	public function modifier(Request $request){
 
 		$id=$request->input('NumID');
 		if(isset($id))
@@ -53,7 +53,7 @@ class GroupeController extends Controller
 			$groupe=Groupe::where('id_groupe', $id)->first();
 			return view('modificationGroupe', compact('groupe'));
 
-	
+			
 		}
 	}
 
@@ -61,7 +61,7 @@ class GroupeController extends Controller
 		
 		Groupe::create([
 			'libelle'=>$request->libelle,
-		
+			
 		]);
 		return redirect('/groupe');
 	}
