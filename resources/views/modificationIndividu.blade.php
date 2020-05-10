@@ -10,7 +10,7 @@
 <input type="text" name="prenom" placeholder="prenom" value="{{$individu->PRENOM}}">
 <input type="email" name="email" placeholder="email" value="{{$individu->EMAIL}}">
 
-<button type="submit">Modifier</button>
+<button class="btn" type="submit">Modifier</button>
 
 </form>
 @endsection

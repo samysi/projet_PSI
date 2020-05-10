@@ -17,25 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/inscription', function(){
-	return view('inscription');
-});
-
-Route::post('/inscription', function(){
-	$individu = new App\Individu;
-	$individu->id_individu = request('id_individu');
-	$individu->nom = request('nom');
-	$individu->prenom = request('prenom');
-	$individu->email = request('email');
-	$individu->numero = request('numero');
-	$individu->id_annuaire = request('id_annuaire');
-	$individu->id_statut = request('id_statut');
-
-	$individu->save();
-
-	return "Nous avons reçu votre email qui est : " . request('email');
-	/*return 'Formulaire reçu';*/
-});
+Route::get('/inscription', 'InscriptionController@formulaire');
+Route::post('/inscription', 'inscriptionController@traitement');
 
 Route::get('/individu', 'IndividuController@afficherIndividu');
 Route::post('/supprimer_individu', 'IndividuController@supprimer');

@@ -16,6 +16,18 @@
 			{{ $individu -> PRENOM}}
 		</th>
 		<th>
+			{{ $individu -> EMAIL}}
+		</th>
+		<th>
+			{{ $individu -> NUMERO}}
+		</th>
+		<th>
+			{{ $individu -> id_annuaire}}
+		</th>
+		<th>
+			{{ $individu -> id_statut}}
+		</th>
+		<th>
 			<button class="btn" type="button"><a href="/modificationIndividu?NumID=<?= $individu['id_individu']?>">Modifier</a></button>
 		</th>
 		<th>
