@@ -26,4 +26,13 @@ Route::post('/supprimer_individu', 'IndividuController@supprimer');
 Route::get('/modificationIndividu', 'IndividuController@modification');
 Route::post('/modifier_individu', 'IndividuController@modifier');
 
+Route::get('/groupe', 'GroupeController@afficherGroupe');
+Route::post('/supprimer_groupe', 'GroupeController@supprimer');
+
+Route::get('/modificationGroupe', 'GroupeController@modification');
+Route::post('/modifier_groupe', 'GroupeController@modifier');
+Route::post('/creation_groupe', 'GroupeController@creation');
+
+
+
 
