@@ -47,6 +47,9 @@
        <li class="nav-item active">
         <a class="nav-link" href="/groupe">Groupe<span class="sr-only">(current)</span></a>
       </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="/appartenance">Appartenance<span class="sr-only">(current)</span></a>
+      </li>
      
     </ul>
   </div>

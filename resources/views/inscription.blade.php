@@ -4,7 +4,6 @@
                 <h1>Inscription Individu</h1>
                 <form action="/inscription" method="post">
                 	{{ csrf_field() }}
-                	<input type="id" name="id_individu" placeholder=ID>
                 	<input type="nom" name="nom" placeholder="Nom">
                 	<input type="prenom" name="prenom" placeholder="Prenom">
                 	<input type="email" name="email" placeholder="Email">
