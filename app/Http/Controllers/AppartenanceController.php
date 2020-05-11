@@ -38,7 +38,6 @@ class AppartenanceController extends Controller
 		$id=$request->input('NumID');
 		if(isset($id))
 		{
-
 			Appartenance::where('id_appartenance', $id)->update([
 				'id_individu'=>$request->individu,
 				'id_groupe'=>$request->groupe,

@@ -7,7 +7,7 @@
 	<form action="/modifier_appartenance?NumID=<?= $appartenance['id_appartenance']?>" method="post">
 		@csrf
 		<select style="width: auto;" name="individu" class="custom-select" size="3">
-			<option value="" selected>{{$appartenance->individu->NOM}} {{$appartenance->individu->PRENOM}}</option>
+			<option value="{{$appartenance->individu->id_individu}}" selected>{{$appartenance->individu->NOM}} {{$appartenance->individu->PRENOM}}</option>
 			@foreach($individu as $individu)
 			<option value="{{$individu->id_individu}}">{{$individu->NOM}} {{$individu->PRENOM}}</option>
 			@endforeach
