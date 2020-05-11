@@ -29,6 +29,7 @@
 	<form method="get" action="/export">
 		<button style="float: right; margin-right: 20px; margin-bottom: 20px;" class="btn btn-success" type="submit">Exporter</button>
 	</form>
+	<a href="/api/recup_api">API</a>
 
 
 

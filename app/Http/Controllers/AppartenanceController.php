@@ -110,5 +110,14 @@ class AppartenanceController extends Controller
 		return self::getCsv($columns, $data);
 	}
 
+	public function api(){
+		$data=array();
+		$appartenances = Appartenance::all();
+		foreach($appartenances as $appartenance) {
+			$data[]= array('nom'=>$appartenance->individu->NOM, 'prenom'=>$appartenance->individu->PRENOM, 'annee'=>$appartenance->annee);
+		}
+		return json_encode($data);
+	}
+
 
 }
