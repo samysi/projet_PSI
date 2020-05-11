@@ -50,6 +50,9 @@
         <li class="nav-item active">
             <a class="nav-link" href="/appartenance">Appartenance<span class="sr-only">(current)</span></a>
         </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/api/recup_api">API<span class="sr-only">(current)</span></a>
+        </li>
         
     </ul>
 </div>
