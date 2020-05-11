@@ -26,7 +26,7 @@
 					<button class="btn" type="button"><a href="/modificationGroupe?NumID=<?= $groupe['id_groupe']?>">Modifier</a></button>
 				</th>
 				<th>
-					<button class="btn" type="submit" formaction="/supprimer_groupe?NumID=<?= $groupe['id_groupe']?>">Supprimer</button></br>
+					<button class="btn btn-danger" type="submit" formaction="/supprimer_groupe?NumID=<?= $groupe['id_groupe']?>">Supprimer</button></br>
 				</th>
 			</tr>
 			@endforeach
@@ -39,7 +39,7 @@
 			<label for="statut">Entrez le nom du groupe</label>
 			<input style="width: auto" type="text" name="libelle" class="form-control" id="statut" placeholder="Nom du groupe">
 		</div>
-		<input type="submit" class="btn" value="Ajouter">
+		<input type="submit" class="btn btn-success" value="Ajouter">
 	</form>
 
 

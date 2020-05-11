@@ -46,7 +46,7 @@
 					<button class="btn" type="button"><a href="/modificationIndividu?NumID=<?= $individu['id_individu']?>">Modifier</a></button>
 				</th>
 				<th>
-					<button class="btn" type="submit" formaction="/supprimer_individu?NumID=<?= $individu['id_individu']?>">Supprimer</button></br>
+					<button class="btn btn-danger" type="submit" formaction="/supprimer_individu?NumID=<?= $individu['id_individu']?>">Supprimer</button></br>
 				</th>
 			</tr>
 			@endforeach

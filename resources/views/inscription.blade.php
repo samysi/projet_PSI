@@ -31,7 +31,7 @@
                      <label for="statut">Entrez votre statut</label>
                      <input type="text" name="id_statut" class="form-control" id="statut" placeholder="Satut">
              </div>
-             <input type="submit" class="btn" value="Ajouter">
+             <input type="submit" class="btn btn-success" value="Ajouter">
      </div>
 
 </center>

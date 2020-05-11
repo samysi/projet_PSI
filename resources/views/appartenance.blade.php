@@ -24,7 +24,7 @@
 		</select>
 		<input type="number" name="annee" placeholder="Année" required>
 
-		<button type="submit" class="btn">Ajouter</button><br>
+		<button type="submit" class="btn btn-primary">Ajouter</button><br>
 	</form>
 	<form method="get" action="/export">
 		<button style="float: right; margin-right: 20px; margin-bottom: 20px;" class="btn btn-success" type="submit">Exporter</button>
@@ -69,7 +69,7 @@
 					<button class="btn" type="button"><a href="/modificationAppartenance?NumID=<?= $appartenance['id_appartenance']?>">Modifier</a></button>
 				</th>
 				<th>
-					<button class="btn" type="submit" formaction="/supprimer_appartenance?NumID=<?= $appartenance['id_appartenance']?>">Supprimer</button></br>
+					<button class="btn btn-danger" type="submit" formaction="/supprimer_appartenance?NumID=<?= $appartenance['id_appartenance']?>">Supprimer</button></br>
 				</th>
 			</tr>
 			@endforeach
